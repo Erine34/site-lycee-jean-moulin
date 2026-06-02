@@ -1,0 +1,219 @@
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px #2579b7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #16263d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2579b7;
+}
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: #000000;
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: bolder;
+  color: #2579b7;
+}
+h1 {
+  text-align: center;
+  margin: 25px auto;
+}
+h2 {
+  text-align: left;
+  font-size: 26px;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+h3 {
+  text-align: center;
+  font-size: 22px;
+}
+h4 {
+  text-align: center;
+  font-size: 18px;
+}
+.block {
+  padding: 50px 0px;
+  border-bottom: 1px solid #c3c3c3;
+}
+.menu {
+  border-top: 5px solid #572f32;
+  background-color: #79373b;
+  padding: 0px;
+}
+.menu li .nav-link {
+  font-size: 22px;
+  margin: 0px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 60px 10px 30px !important;
+}
+.menu li .nav-link:hover {
+  background-color: #e40613;
+  color: #ffffff;
+}
+.menu li .dropdown-menu {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  padding: 15px 0px;
+  background-color: #fbfbfb;
+}
+.menu .dropdown-toggle::after {
+  position: absolute;
+  top: 26px;
+  right: 30px;
+}
+.menu .navbar-toggler {
+  border: none;
+}
+.menu .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+.menu .dropdown-item {
+  cursor: pointer;
+  padding: 5px 40px;
+}
+.menu li .dropdown-item:hover {
+  color: #2579b7;
+  background-color: transparent;
+}
+
+.carousel-caption {
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  padding: 0px;
+  background-color: rgba(26, 29, 32, 0.25);
+  transition: background-color 1s;
+}
+.v-middle-text {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #ffffff;
+}
+.carousel-caption:hover {
+  background-color: rgba(26, 29, 32, 0);
+}
+h3 svg.localisation {
+  margin-top: 25px;
+  bottom: 20px;
+}
+svg.localisation {
+  height: 30px;
+  fill: #2579b7;
+  position: relative;
+  bottom: 8px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+svg.localisation:hover {
+  fill: #e40613;
+}
+img:not(.carousel img, .logo) {
+  border: 1px solid silver;
+  margin-bottom: 10px;
+}
+.carousel {
+  margin-bottom: 10px;
+}
+.el-modal-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.el-modal-dialog {
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  max-width: 1526px;
+  width: 70vw;
+  max-height: 90vh;
+  height: calc(1003 / 1526 * 80vw);
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%;
+  display: none;
+}
+.el-modal-close {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 0px;
+  z-index: 999999;
+  cursor: pointer;
+}
+.el-modal-close svg {
+  fill: #000000;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+.el-modal-close svg:hover {
+  fill: #ffffff;
+  background-color: #e40613;
+}
+.el-modal-map {
+  position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+.el-modal-map#map {
+  background-image: url(../img/gg_earth_jm.JPG);
+}
+
+.el-modal-map#staff {
+  background-image: url(../img/staff.jpg);
+  display: none;
+}
+.no-border {
+  border-bottom: none;
+}
+.logo {
+  max-width: 80%;
+}
+
+@media (max-width: 1200px) {
+  h2 {
+    font-size: 22px;
+    letter-spacing: 0px;
+  }
+  h3 {
+    font-size: 18px;
+    letter-spacing: 0px;
+  }
+}
